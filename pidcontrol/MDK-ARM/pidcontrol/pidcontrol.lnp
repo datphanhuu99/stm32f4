@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"pidcontrol\stm32f4xx_hal_rcc.o"
+"pidcontrol\stm32f4xx_hal_dma.o"
+"pidcontrol\stm32f4xx_hal_cortex.o"
+"pidcontrol\stm32f4xx_hal_rcc_ex.o"
+"pidcontrol\stm32f4xx_hal_dma_ex.o"
+"pidcontrol\stm32f4xx_hal_uart.o"
+"pidcontrol\stm32f4xx_hal_pwr_ex.o"
+"pidcontrol\stm32f4xx_hal_gpio.o"
+"pidcontrol\stm32f4xx_hal_flash.o"
+"pidcontrol\stm32f4xx_hal_flash_ramfunc.o"
+"pidcontrol\stm32f4xx_hal.o"
+"pidcontrol\stm32f4xx_hal_tim.o"
+"pidcontrol\stm32f4xx_hal_pwr.o"
+"pidcontrol\stm32f4xx_hal_flash_ex.o"
+"pidcontrol\stm32f4xx_hal_tim_ex.o"
+"pidcontrol\stm32f4xx_it.o"
+"pidcontrol\stm32f4xx_hal_msp.o"
+"pidcontrol\main.o"
+"pidcontrol\startup_stm32f429xx.o"
+"pidcontrol\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "pidcontrol\pidcontrol.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "pidcontrol.map" -o pidcontrol\pidcontrol.axf

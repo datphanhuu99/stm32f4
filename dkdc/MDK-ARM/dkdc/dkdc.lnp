@@ -1,0 +1,24 @@
+--cpu Cortex-M4.fp
+".\dkdc\system_stm32f4xx.o"
+".\dkdc\stm32f4xx_it.o"
+".\dkdc\stm32f4xx_hal_msp.o"
+".\dkdc\main.o"
+".\dkdc\startup_stm32f429xx.o"
+".\dkdc\stm32f4xx_hal_pwr_ex.o"
+".\dkdc\stm32f4xx_hal_flash_ex.o"
+".\dkdc\stm32f4xx_hal_tim_ex.o"
+".\dkdc\stm32f4xx_hal_dma_ex.o"
+".\dkdc\stm32f4xx_hal_cortex.o"
+".\dkdc\stm32f4xx_hal_flash.o"
+".\dkdc\stm32f4xx_hal_dma.o"
+".\dkdc\stm32f4xx_hal_tim.o"
+".\dkdc\stm32f4xx_hal_rcc_ex.o"
+".\dkdc\stm32f4xx_hal_rcc.o"
+".\dkdc\stm32f4xx_hal_flash_ramfunc.o"
+".\dkdc\stm32f4xx_hal_pwr.o"
+".\dkdc\stm32f4xx_hal_gpio.o"
+".\dkdc\stm32f4xx_hal.o"
+--library_type=microlib --strict --scatter ".\dkdc\dkdc.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\dkdc\dkdc.map" -o .\dkdc\dkdc.axf

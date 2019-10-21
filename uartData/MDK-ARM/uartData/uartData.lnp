@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"uartdata\main.o"
+"uartdata\stm32f4xx_it.o"
+"uartdata\stm32f4xx_hal_msp.o"
+"uartdata\startup_stm32f407xx.o"
+"uartdata\stm32f4xx_hal_flash_ramfunc.o"
+"uartdata\stm32f4xx_hal_gpio.o"
+"uartdata\stm32f4xx_hal.o"
+"uartdata\stm32f4xx_hal_pwr_ex.o"
+"uartdata\stm32f4xx_hal_tim_ex.o"
+"uartdata\stm32f4xx_hal_flash_ex.o"
+"uartdata\stm32f4xx_hal_dma_ex.o"
+"uartdata\stm32f4xx_hal_rcc_ex.o"
+"uartdata\stm32f4xx_hal_rcc.o"
+"uartdata\stm32f4xx_hal_pwr.o"
+"uartdata\stm32f4xx_hal_uart.o"
+"uartdata\stm32f4xx_hal_dma.o"
+"uartdata\stm32f4xx_hal_tim.o"
+"uartdata\stm32f4xx_hal_flash.o"
+"uartdata\stm32f4xx_hal_cortex.o"
+"uartdata\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "uartData\uartData.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "uartData.map" -o uartData\uartData.axf

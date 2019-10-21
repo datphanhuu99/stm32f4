@@ -1,0 +1,24 @@
+--cpu Cortex-M4.fp
+"timerbasic\stm32f4xx_hal_rcc_ex.o"
+"timerbasic\stm32f4xx_hal_rcc.o"
+"timerbasic\stm32f4xx_hal_dma.o"
+"timerbasic\stm32f4xx_hal_cortex.o"
+"timerbasic\stm32f4xx_hal_dma_ex.o"
+"timerbasic\stm32f4xx_hal_flash_ex.o"
+"timerbasic\stm32f4xx_hal_pwr.o"
+"timerbasic\stm32f4xx_hal_tim_ex.o"
+"timerbasic\stm32f4xx_hal_tim.o"
+"timerbasic\stm32f4xx_hal_gpio.o"
+"timerbasic\stm32f4xx_hal_flash.o"
+"timerbasic\stm32f4xx_hal.o"
+"timerbasic\stm32f4xx_hal_flash_ramfunc.o"
+"timerbasic\stm32f4xx_hal_pwr_ex.o"
+"timerbasic\stm32f4xx_hal_msp.o"
+"timerbasic\main.o"
+"timerbasic\stm32f4xx_it.o"
+"timerbasic\startup_stm32f429xx.o"
+"timerbasic\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "timerBAsic\timerBAsic.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "timerBAsic.map" -o timerBAsic\timerBAsic.axf

@@ -1,0 +1,24 @@
+--cpu Cortex-M4.fp
+"faldingled\stm32f4xx_hal_rcc.o"
+"faldingled\stm32f4xx_hal_rcc_ex.o"
+"faldingled\stm32f4xx_hal_tim.o"
+"faldingled\stm32f4xx_hal_tim_ex.o"
+"faldingled\stm32f4xx_hal_cortex.o"
+"faldingled\stm32f4xx_hal_flash_ex.o"
+"faldingled\stm32f4xx_hal_pwr.o"
+"faldingled\stm32f4xx_hal_gpio.o"
+"faldingled\stm32f4xx_hal.o"
+"faldingled\stm32f4xx_hal_pwr_ex.o"
+"faldingled\stm32f4xx_hal_flash_ramfunc.o"
+"faldingled\stm32f4xx_hal_dma_ex.o"
+"faldingled\stm32f4xx_hal_flash.o"
+"faldingled\stm32f4xx_hal_dma.o"
+"faldingled\system_stm32f4xx.o"
+"faldingled\startup_stm32f429xx.o"
+"faldingled\main.o"
+"faldingled\stm32f4xx_it.o"
+"faldingled\stm32f4xx_hal_msp.o"
+--library_type=microlib --strict --scatter "faldingLed\faldingLed.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "faldingLed.map" -o faldingLed\faldingLed.axf

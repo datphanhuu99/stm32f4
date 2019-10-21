@@ -1,0 +1,24 @@
+--cpu Cortex-M4.fp
+"countedge\stm32f4xx_hal_msp.o"
+"countedge\main.o"
+"countedge\stm32f4xx_it.o"
+"countedge\stm32f4xx_hal_rcc.o"
+"countedge\stm32f4xx_hal_dma_ex.o"
+"countedge\stm32f4xx_hal_dma.o"
+"countedge\stm32f4xx_hal.o"
+"countedge\stm32f4xx_hal_tim.o"
+"countedge\stm32f4xx_hal_flash_ramfunc.o"
+"countedge\stm32f4xx_hal_gpio.o"
+"countedge\stm32f4xx_hal_flash_ex.o"
+"countedge\stm32f4xx_hal_pwr.o"
+"countedge\stm32f4xx_hal_pwr_ex.o"
+"countedge\stm32f4xx_hal_cortex.o"
+"countedge\stm32f4xx_hal_tim_ex.o"
+"countedge\stm32f4xx_hal_rcc_ex.o"
+"countedge\stm32f4xx_hal_flash.o"
+"countedge\startup_stm32f429xx.o"
+"countedge\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "countEdge\countEdge.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "countEdge.map" -o countEdge\countEdge.axf
